@@ -17,7 +17,7 @@ https://developer.spotify.com/documentation/general/guides/authorization-guide/
 Documentation for Spotify search endpoint
 https://developer.spotify.com/documentation/web-api/reference/#category-search
 
-Spotify developer console. Good for example testing and easy retrieval of access token 
+Spotify developer console. For testing and easy retrieval of access token 
 https://developer.spotify.com/console/get-search-item/
 
 # How to use
