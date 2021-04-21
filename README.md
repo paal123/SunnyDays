@@ -1,7 +1,7 @@
 # SunnyDays
-Example code of api usage for UiS Helse Hackathon 2021
+Example code of API usage for UiS Helse Hackathon 2021
 
-The example demonstrates usage of apis to retrieve weather forecast (from https://api.met.no) for your current position, and then suggest a random playlist from Spotify through their apis (https://developer.spotify.com)
+The example demonstrates usage of APIs to retrieve weather forecast (from https://api.met.no) for your current position, and then suggest a random playlist from Spotify through their apis (https://developer.spotify.com)
 
 The example demonstrates (_very simplified_) both anonymous calls as well as an Implicit Grant Flow for calls against https://api.spotify.com.
  
