@@ -16,7 +16,9 @@ class Yr extends React.Component {
         this.setState({lat: pos.coords.latitude, long: pos.coords.longitude}, this.getYrData);
     }
 
-    async getYrData(pos) {        
+    async getYrData(pos) {
+        // Documentation:
+        // https://api.met.no/weatherapi/locationforecast/2.0/documentation#!/data/get_compact 
         const response = await axios.get(`https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${this.state.lat}&lon=${this.state.long}`);
         var currentWeatherSymbol = response.data.properties.timeseries[0].data.next_1_hours.summary.symbol_code;
         var currentWeather = "sunny";
@@ -40,7 +42,7 @@ class Yr extends React.Component {
     render() {
         return (
             <div>
-                <div>Looks like there's gonna be {this.state.weather}...</div>
+                <div>Looks like it's gonna be {this.state.weather}...</div>
             </div>
         )
     }

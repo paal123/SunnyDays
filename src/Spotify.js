@@ -18,7 +18,10 @@ class Spotify extends React.Component {
             headers: {
               'Authorization': 'Bearer ' + this.state.token
             }
-          }
+        }
+        // Documentation:
+        // https://developer.spotify.com/console/get-search-item/
+        // https://developer.spotify.com/documentation/web-api/reference/#category-search
         const response = await axios.get(`https://api.spotify.com/v1/search?q=${this.state.weather}&type=playlist&market=no&limit=20`, config);
         var randomList = Math.floor(Math.random()*20);
         var playlist = response.data.playlists.items[randomList];

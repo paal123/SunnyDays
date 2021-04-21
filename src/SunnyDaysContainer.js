@@ -3,12 +3,6 @@ import Yr  from './Yr';
 import Spotify from './Spotify';
 import './App.css';
 
-const authEndpoint = 'https://accounts.spotify.com/authorize';
-const clientId = "e6af23f34ccf46f4a92eb6ff160681f2";
-const redirectUri = "http://localhost:3000";
-const scopes = [
-];
-
 class SunnyDaysContainer extends React.Component {
     state = {
         token: "",
@@ -35,7 +29,11 @@ class SunnyDaysContainer extends React.Component {
                 {!this.state.token && 
                     <div>
                         <p>Welcome to Sunny Days</p>
-                        <a href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`} className="btn">Login to Spotify</a>
+                        {
+                            // Documentation:
+                            // https://developer.spotify.com/documentation/general/guides/authorization-guide/ 
+                        }
+                        <a href="https://accounts.spotify.com/authorize?client_id=e6af23f34ccf46f4a92eb6ff160681f2&redirect_uri=http://localhost:3000&response_type=token&show_dialog=true" className="btn">Login to Spotify</a>
                     </div>
                 }
                 { this.state.token && 
