@@ -5,7 +5,8 @@ The example demonstrates usage of apis to retrieve weather forecast (from https:
 
 The example demonstrates (_very simplified_) both anonymous calls as well as an Implicit Grant Flow for calls against https://api.spotify.com.
  
-![image](https://user-images.githubusercontent.com/5801561/115555747-2a25db80-a2b0-11eb-8d57-dc3de70b9a27.png)
+![image](https://user-images.githubusercontent.com/5801561/115568295-71b26480-a2bc-11eb-8184-45b6c5d0e988.png)
+
 
 
 # How to use
