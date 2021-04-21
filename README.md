@@ -1,2 +1,2 @@
 # SunnyDays
-Example code of api usage for UIS Helse Hackathon 2021
+Example code of api usage for UiS Helse Hackathon 2021
