@@ -21,6 +21,7 @@ class SunnyDaysContainer extends React.Component {
         if (access_token) {
             this.setState({token: access_token});
         }
+        document.title = "Sunny Days";
     }
 
     weatherCallback = (weather) => {
