@@ -6,7 +6,7 @@ import './App.css';
 class SunnyDaysContainer extends React.Component {
     state = {
         token: "",
-        weather: "thunder"
+        weather: ""
     }
     
     componentDidMount() {

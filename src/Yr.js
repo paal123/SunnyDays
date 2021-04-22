@@ -42,8 +42,14 @@ class Yr extends React.Component {
     render() {
         return (
             <div>
-                <div>Looks like it's gonna be {this.state.weather}...</div>
+                {!this.state.weather && 
+                    <div>Calculating weather...</div>
+                }       
+                {this.state.weather && 
+                    <div>Looks like it's gonna be {this.state.weather}...</div>
+                }       
             </div>
+            
         )
     }
 }

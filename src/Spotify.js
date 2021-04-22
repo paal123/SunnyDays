@@ -41,9 +41,16 @@ class Spotify extends React.Component {
     render() {
         return (
             <div className="spotify-box">
-                <p>How about this playlist:</p>
-                <a href={this.state.url}><img src={this.state.image} alt="Spotify..."/></a>
-                <p>{this.state.title}</p>
+                {!this.state.weather && 
+                    <p>Waiting for weather forecast...</p>
+                }
+                {this.state.weather && 
+                <div>
+                    <p>How about this playlist:</p>
+                    <a href={this.state.url}><img src={this.state.image} alt="Spotify..."/></a>
+                    <p>{this.state.title}</p>
+                </div>
+                }
             </div>
         )
     }
